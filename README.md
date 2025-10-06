@@ -1,0 +1,2 @@
+# Binary-Classification-with-Neural-Networks-on-the-Census-Income-Dataset-Completion-requirements
+The UCI Census Income Dataset (∼32K records) predicts if income >$50K using features like age, education, and occupation. PyTorch model embeds categoricals, normalizes continuous inputs, and uses a hidden layer (50 neurons, ReLU, dropout=0.4). Trained with CrossEntropyLoss/Adam for 300 epochs, it achieves ∼83% accuracy, 
