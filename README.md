@@ -287,9 +287,9 @@ print(f'Prediction: {prediction} (Probability >50K: {prob:.4f})')
 
 ```
 ## Output:
-Evaluation
+#### Evaluation
 <img width="666" height="576" alt="image" src="https://github.com/user-attachments/assets/74b41c65-ef5f-461b-b256-a60c87afe5fe" />
 
-Prediction 
+#### Prediction 
 <img width="436" height="45" alt="image" src="https://github.com/user-attachments/assets/0db13fda-6391-48aa-97e2-bc8b173d6704" />
 
