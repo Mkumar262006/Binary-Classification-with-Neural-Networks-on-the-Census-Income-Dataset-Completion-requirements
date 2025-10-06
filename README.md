@@ -10,10 +10,10 @@ Key components:
 - **Evaluation**: Test loss/accuracy.
 - **Bonus**: Prediction function for new inputs.
 
-## Short Description (Under 50 Words)
+## Short Description
 The UCI Census Income Dataset (∼32K records) predicts if income >$50K using features like age, education, and occupation. PyTorch model embeds categoricals, normalizes continuous inputs, and uses a hidden layer (50 neurons, ReLU, dropout=0.4). Trained with CrossEntropyLoss/Adam for 300 epochs, it achieves ∼83% accuracy, capturing non-linear interactions.
 
-## Detailed Description (Under 350 Words)
+## Detailed Description
 ### Binary Classification with Neural Networks on the Census Income Dataset
 
 The Census Income Dataset, sourced from the UCI Machine Learning Repository, comprises approximately 32,561 anonymized U.S. census records from 1994, with 14 attributes including demographic (age, gender, race), educational (education level, years of schooling), occupational (workclass, occupation), and economic (capital gains/losses, hours per week) features. The binary target variable classifies annual income as ≤50K or >50K, making it a benchmark for socioeconomic prediction tasks.
@@ -28,7 +28,7 @@ Challenges include class imbalance (∼76% ≤50K) addressed via weighted loss, 
 
 This setup demonstrates neural nets' versatility for tabular classification, extensible to real-world applications like credit scoring. Future enhancements: deeper layers or transformers for boosted performance.
 
-(Word count: 298)
+
 
 ## Setup Instructions
 1. Clone the repository:
@@ -66,8 +66,7 @@ This setup demonstrates neural nets' versatility for tabular classification, ext
 - Expected Test Accuracy: ~80-85% (varies with random seed).
 - See the notebook for training loss plot and evaluation metrics.
 
-## Notebook Content (census_income_workshop.ipynb)
-Below is the full Jupyter notebook content in Markdown/code blocks for easy recreation.
+
 
 ### Cell 1: Imports
 ```python
@@ -285,5 +284,6 @@ example_con = [40, 100000, 13, 0, 0, 40]  # Age, fnlwgt, EducationNum, Cap Gain,
 
 prediction, prob = predict_income(model, example_cat, example_con)
 print(f'Prediction: {prediction} (Probability >50K: {prob:.4f})')
+
 ```
 
